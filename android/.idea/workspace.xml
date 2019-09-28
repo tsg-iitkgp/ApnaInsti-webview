@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="285ab97c-fd1a-4540-91a8-ba0d67920aaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.localized" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/notes/Intro_to_Electronics_P1_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/notes/Intro_to_Electronics_P2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/TUTORIAL SEMICONDUCTORS DIODE TRANSISTOR CIRCUITS.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial-1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial-2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_1_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_2_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_3_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_4.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_4_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_5_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_6_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_7_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/intro to ec/tutorials/Tutorial_8_2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/midsem admit card.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/Screenshot 2019-09-12 at 8.56.39 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/1 - Network Analysis.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/2 - Signals and Systems.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/3 - Fourier Series, CTFT.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/4 - DTFT, LT, Network Analysis in s-Domain.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/5 - Graph Theory.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/6 - 2 Port Network.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note10signals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note1signals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note2onsignals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note3onsignals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note4signals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note5signals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note6signals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note7signals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note8signals.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/note9handwritten.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/notes/avishek chattarjee/signetcoverage2019.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3rdSem/sigNets/signetcoverage2019.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../acad_cal1920.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/.buckconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/.flowconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/.prettierrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/.watchmanconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/__tests__/App-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/BUCK" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/build_defs.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/java/com/admob/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/java/com/admob/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/Podfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob-tvOS/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob-tvOSTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob.xcodeproj/xcshareddata/xcschemes/admob-tvOS.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob.xcodeproj/xcshareddata/xcschemes/admob.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob/AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob/AppDelegate.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob/Base.lproj/LaunchScreen.xib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob/Images.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admob/main.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admobTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/ios/admobTests/admobTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/metro.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../admob/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../algo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/.buckconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/.flowconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/.watchmanconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/AboutUs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/AstroBlog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/AstrologerList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/BlogPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/CardToProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/DailyPrediction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/DrawerNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ForgotPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/FormPred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/GlobalValues.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/HomeEnglish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/HomeMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/HomeTelugu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/HoroIconToHoroInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/HoroMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/HoroNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Horoscope.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/KundaliForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/KundaliFormToKundaliInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/KundaliNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Kundali_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Language.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/LifeHoro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/LifePrediction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Loginnav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/MonthHoro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/MonthPrediction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/NavigationToExpert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Notifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Open.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/OpenPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/OtpPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Password.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/PasswordNav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/PasswordNav2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Payment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/PredictionFormToPredictionMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/PredictionMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/RateApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ResetPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/Zodiac.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/__tests__/App-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/BUCK" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/build_defs.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/AntDesign.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Barriecito-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Entypo.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/EvilIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Feather.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/FontAwesome.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/FontAwesome5_Brands.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/FontAwesome5_Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/FontAwesome5_Solid.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Fontisto.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Foundation.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/MaterialIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/MountainsofChristmas-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/MountainsofChristmas-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Octicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Roboto-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Rubik-RegularItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/SimpleLineIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/assets/fonts/Zocial.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/java/com/astro/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/java/com/astro/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/first.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/astro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/expert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/horo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/horosc.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/kundali.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/predic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac-ConvertImage copy 5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/images/zodiac9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro-tvOS/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro-tvOSTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro.xcodeproj/xcshareddata/xcschemes/astro-tvOS.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro.xcodeproj/xcshareddata/xcschemes/astro.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro/AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro/AppDelegate.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro/Base.lproj/LaunchScreen.xib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro/Images.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astro/main.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astroTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/ios/astroTests/astroTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/metro.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/navigation1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/second.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/setting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astro/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/.buckconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/.flowconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/.watchmanconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/__tests__/App-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/BUCK" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/build_defs.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/AntDesign.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/Entypo.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/EvilIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/Feather.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/FontAwesome.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/FontAwesome5_Brands.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/FontAwesome5_Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/FontAwesome5_Solid.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/Fontisto.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/Foundation.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/Ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/MaterialIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/Octicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/SimpleLineIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/assets/fonts/Zocial.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/java/com/astrologer/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/java/com/astrologer/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/keystores/BUCK" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/keystores/debug.keystore.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer-tvOS/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer-tvOSTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer.xcodeproj/xcshareddata/xcschemes/astrologer-tvOS.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer.xcodeproj/xcshareddata/xcschemes/astrologer.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer/AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer/AppDelegate.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer/Base.lproj/LaunchScreen.xib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer/Images.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologer/main.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologerTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/ios/astrologerTests/astrologerTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/metro.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../astrologer/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flutter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kgpamica" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/20180804_155233.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/20180804_155233__1563608374_106.220.17.31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/Screenshot 2019-08-15 at 5.40.08 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/iitkgp_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/iphone-png-png-iphone-png-740.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/24MB-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/ADS-iitkgp APP DEVelopment society.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/IIT KGP CURRICULUM AT YOUR FINGERTIPs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/KGP amica-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/KGP amica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/KGPAMICA RELEASED.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/KGPAMICA copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/KGPAmiCA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/Screenshot_20190908-182830_kgpamica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/Screenshot_20190908-183730_kgpamica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/Untitled design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/kgpamica copy 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/ADS POSTERS/kgpamica/kgpamica is given for review copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/BeautyPlus_20190702101921244_save.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/IMG_20180807_064459_501.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/eso1907a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pics/iith.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/aboutme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/contactme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/aboutme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/cardAnimation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/cardhover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/contactme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/fa.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/fa.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/imagehover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/typicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/css/whatido.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/images/5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/js/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/js/jq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/js/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/js/jsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/mail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../portfolio website/whatido.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../resume/resume.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../resume/resume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sem3calender.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../skills to be aquired/Screenshot 2019-09-19 at 2.20.27 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../skills to be aquired/Screenshot 2019-09-20 at 10.53.02 AM.png" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apnainsti/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apnainsti/MainActivity.java" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ApnaInsti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ApnaInsti" type="1abcf292:AndroidViewProjectNode" />
+              <item name="react-native-gesture-handler" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="ApnaInsti" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.4.0" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="285ab97c-fd1a-4540-91a8-ba0d67920aaa" name="Default Changelist" comment="" />
+      <created>1569612065625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569612065625</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="816" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3297568" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.32872927" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apnainsti/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
