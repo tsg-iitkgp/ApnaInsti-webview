@@ -24,7 +24,7 @@ import gstyles from "./styles.js";
 import MainPage from "./MainPage.js";
 import AboutUs from './AboutUs.js';
 import More from './More.js';
-
+import {Container, Footer, Body, Content} from 'native-base';
 import {
   createAppContainer,
   DrawerItems,
@@ -39,111 +39,7 @@ export default class DrawerNavigation extends Component<Props> {
   }
 }
 
-class CustomDrawerContentComponent extends Component<Props> {
-  ComponentDidMount(){
-  
-  }
-  render() {
-    return (
-      <ScrollView style={styles.container}>
-        <SafeAreaView forceInset={{ top: "always", horizontal: "never" }}>
-          <View style={gstyles.mainBlocks}>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-                this.props.navigation.navigate("MainPage");
-                this.props.navigation.closeDrawer();
-              }}
-            >
-              <Icon name="home" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>Gymkhana Website</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-                this.props.navigation.navigate("Blog");
-                this.props.navigation.closeDrawer();
-              }}
-            >
-              <IonIcon name="ios-paper" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>Gymkhana Blog</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-                this.props.navigation.navigate("MetaKgp");
-                this.props.navigation.closeDrawer();
-              }}
-            >
-              <IconFA name="wikipedia-w" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>MetaKGP Wiki</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-                this.props.navigation.navigate("ChillZone");
-                this.props.navigation.closeDrawer();
-              }}
-            >
-              <AntdesignIcon name="smileo" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>ChillZone</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-                this.props.navigation.navigate("MFQP");
-                this.props.navigation.closeDrawer();
-              }}
-            >
-              <Icon name="book-open" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>MFQP</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-                this.props.navigation.navigate("ReachUs");
-                this.props.navigation.closeDrawer();
-              }}
-            >
-              <Entypo name="new-message" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>ReachUs</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-                this.props.navigation.navigate("AboutUs");
-                this.props.navigation.closeDrawer();
-              }}
-            >
-              <AntdesignIcon
-                name="infocirlceo" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>AboutUs</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={[gstyles.blocks]}
-              onPress={() => {
-               this.props.navigation.navigate("More");
-               this.props.navigation.closeDrawer()
-              }}
-            >
-              <Icon name="more-horizontal" style={gstyles.icon} />
-              <Text style={gstyles.blockText}>More</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={{flexDirection:'row',width:'100%', alignItems:'flex-end',justifyContent:'center', flexDirection:'row',
-marginTop:height(9)}}>
-         <TouchableOpacity onPress={()=>{Linking.openURL('https://www.linkedin.com/company/technology-students-gymkhana-iit-kharagpur/about/')}}
-><IconA name='linkedin-square'  style={styles.SocialIcons}/></TouchableOpacity>
-            <TouchableOpacity  onPress={()=>{Linking.openURL('https://www.facebook.com/TSG.IITKharagpur/')}}
-><IconA style={styles.SocialIcons} name='facebook-square'/></TouchableOpacity>
-<TouchableOpacity  onPress={()=>{Linking.openURL('mailto:tech.tsgiitkgp@gmail.com')}}
-><IconFA style={styles.SocialIcons} name='google-plus-square'/></TouchableOpacity>
-  </View>
-        </SafeAreaView>
-      </ScrollView>
-    );
-  }
-}
+
 class Blog extends Component<Props> {
   static navigationOptions = { header: null };
   ActivityIndicatorLoadingView() {
@@ -384,30 +280,97 @@ class ReachUs extends Component<Props> {
     );
   }
 }
+const CustomDrawerContentComponent =(props) => (
+<Container><Content><DrawerItems {...props}/></Content>
+         
 
+         <Footer style={{height:50, backgroundColor:'#0000a0'}} >
+           <Body><View style={{flexDirection:'row',width:'100%', justifyContent:'space-around'
+}}>
+         <TouchableOpacity onPress={()=>{Linking.openURL('https://www.linkedin.com/company/technology-students-gymkhana-iit-kharagpur/about/')}}
+><IconA name='linkedin-square'  style={styles.SocialIcons}/></TouchableOpacity>
+            <TouchableOpacity  onPress={()=>{Linking.openURL('https://www.facebook.com/TSG.IITKharagpur/')}}
+><IconA style={styles.SocialIcons} name='facebook-square'/></TouchableOpacity>
+<TouchableOpacity  onPress={()=>{Linking.openURL('mailto:tech.tsgiitkgp@gmail.com')}}
+><IconA style={styles.SocialIcons} name='mail'/></TouchableOpacity>
+  </View></Body>
+         </Footer>
+         </Container>
+         
+      
+    
+)
 
 const Navigator = createDrawerNavigator(
   {
-    DrawerNavigation: DrawerNavigation,
-    MainPage: MainPage,
-    Blog: Blog,
-    MetaKgp: MetaKgp,
-    ChillZone: ChillZone,
-    MFQP: MFQP,
-    ReachUs: ReachUs,
-   More:More,
-   AboutUs:AboutUs,
+    //DrawerNavigation: DrawerNavigation,
+    MainPage: {
+      screen:MainPage,
+       navigationOptions: {
+        drawerLabel: 'Gymkhana Website',
+        drawerIcon: ({ tintColor }) =>  <Icon name="home"  size={25} color={tintColor} />
+      }
+          },
+     Blog: {
+      screen:Blog,
+      navigationOptions:{
+        drawerLabel: 'Gymkhana Blog',
+        drawerIcon: ({ tintColor })=> <IonIcon name="ios-paper" size={25} color={tintColor} />
+      }
+    },
+    MetaKgp: {
+      screen:MetaKgp,
+      navigationOptions:{
+        drawerLabel: 'MetaKgp Wiki',
+        drawerIcon: ({ tintColor })=> <IconFA name="wikipedia-w" size={25} color={tintColor} />
+      }
+    },
+    ChillZone: {
+      screen:ChillZone,
+      navigationOptions:{
+        drawerLabel: 'ChillZone',
+        drawerIcon: ({ tintColor })=> <AntdesignIcon name="smileo" size={25} color={tintColor} />
+      }
+    },
+    MFQP: {
+      screen:MFQP,
+      navigationOptions:{
+        drawerIcon: ({ tintColor })=> <Icon name="book-open" size={25} color={tintColor} />
+      }
+    },
+    ReachUs: {
+      screen:ReachUs,
+      navigationOptions:{
+        drawerLabel: 'Reach Us',
+        drawerIcon: ({ tintColor })=> <Entypo name="new-message" size={25} color={tintColor} />
+      }
+    },
+   AboutUs:{
+    screen:AboutUs,
+    navigationOptions:{
+      drawerIcon: ({ tintColor })=>  <AntdesignIcon
+                name="infocirlceo" size={25} color={tintColor} />
+    }
+   },
+   More:{
+    screen:More,
+    navigationOptions:{
+      drawerIcon: ({ tintColor })=> <Icon name="more-horizontal" size={25} color={tintColor} />
+    }
+   },
   },
   {
     initialRouteName: "MainPage",
     contentComponent: CustomDrawerContentComponent,
-    drawerBackgroundColor: "#0000A0",
+    drawerOpenRoute:'DrawerOpen',
+    drawerCloseRoute:'DrawerClose',
+    drawerToggleRoute:'drawerToggle',
     contentOptions: {
-      activeTintColor: "#ffffff",
-      inactiveTintColor: "#1999CE",
+      activeTintColor: "#fff",
+      inactiveTintColor: "#575757",
 
-      activeBackgroundColor: "#1999CE",
-      inactiveBackgroundColor: "#ffffff"
+      activeBackgroundColor: "#0000a0",
+      
     }
   }
 );
