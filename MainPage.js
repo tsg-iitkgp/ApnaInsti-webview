@@ -28,7 +28,7 @@ export default class MainPage extends Component<Props> {
     return (
       <View style={styles.actindi}>
       <ActivityIndicator
-        color="#009688"
+        color="#7878ff"
         size="large"
         style={styles.ActivityIndicatorStyle}
       />
@@ -54,7 +54,8 @@ export default class MainPage extends Component<Props> {
                 marginLeft: "10%",
                 alignItems: "center",
                 color: "#fff",
-                fontSize: 22
+                fontSize: 22,
+                fontFamily:'Roboto-Regular',
               }}
             >
               ApnaInsti

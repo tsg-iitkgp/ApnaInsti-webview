@@ -22,9 +22,9 @@ import { EventRegister } from "react-native-event-listeners";
 import { width, height, totalSize } from "react-native-dimension";
 import gstyles from "./styles.js";
 import MainPage from "./MainPage.js";
-import AboutUs from './AboutUs.js';
-import More from './More.js';
-import {Container, Footer, Body, Content} from 'native-base';
+import AboutUs from "./AboutUs.js";
+import More from "./More.js";
+import { Container, Footer, Body, Content } from "native-base";
 import {
   createAppContainer,
   DrawerItems,
@@ -32,13 +32,11 @@ import {
 } from "react-navigation";
 import { createDrawerNavigator } from "react-navigation-drawer";
 export default class DrawerNavigation extends Component<Props> {
-
   static navigationOptions = { header: null };
   render() {
     return <Drawers />;
   }
 }
-
 
 class Blog extends Component<Props> {
   static navigationOptions = { header: null };
@@ -71,7 +69,8 @@ class Blog extends Component<Props> {
                 marginLeft: "10%",
                 alignItems: "center",
                 color: "#fff",
-                fontSize: 22
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
               }}
             >
               ApnaInsti
@@ -119,7 +118,8 @@ class MetaKgp extends Component<Props> {
                 marginLeft: "10%",
                 alignItems: "center",
                 color: "#fff",
-                fontSize: 22
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
               }}
             >
               ApnaInsti
@@ -167,7 +167,8 @@ class ChillZone extends Component<Props> {
                 marginLeft: "10%",
                 alignItems: "center",
                 color: "#fff",
-                fontSize: 22
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
               }}
             >
               ApnaInsti
@@ -215,7 +216,8 @@ class MFQP extends Component<Props> {
                 marginLeft: "10%",
                 alignItems: "center",
                 color: "#fff",
-                fontSize: 22
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
               }}
             >
               ApnaInsti
@@ -263,7 +265,8 @@ class ReachUs extends Component<Props> {
                 marginLeft: "10%",
                 alignItems: "center",
                 color: "#fff",
-                fontSize: 22
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
               }}
             >
               ApnaInsti
@@ -271,7 +274,9 @@ class ReachUs extends Component<Props> {
           </View>
         </View>
         <WebView
-          source={{ uri: "http://www.gymkhana.iitkgp.ac.in/blog/index.php/complaint/" }}
+          source={{
+            uri: "http://www.gymkhana.iitkgp.ac.in/blog/index.php/complaint/"
+          }}
           domStorageEnabled={true}
           startInLoadingState={true}
           renderLoading={this.ActivityIndicatorLoadingView}
@@ -280,97 +285,135 @@ class ReachUs extends Component<Props> {
     );
   }
 }
-const CustomDrawerContentComponent =(props) => (
-<Container><Content><DrawerItems {...props}/></Content>
-         
+const CustomDrawerContentComponent = props => (
+  <Container>
 
-         <Footer style={{height:50, backgroundColor:'#0000a0'}} >
-           <Body><View style={{flexDirection:'row',width:'100%', justifyContent:'space-around'
-}}>
-         <TouchableOpacity onPress={()=>{Linking.openURL('https://www.linkedin.com/company/technology-students-gymkhana-iit-kharagpur/about/')}}
-><IconA name='linkedin-square'  style={styles.SocialIcons}/></TouchableOpacity>
-            <TouchableOpacity  onPress={()=>{Linking.openURL('https://www.facebook.com/TSG.IITKharagpur/')}}
-><IconA style={styles.SocialIcons} name='facebook-square'/></TouchableOpacity>
-<TouchableOpacity  onPress={()=>{Linking.openURL('mailto:tech.tsgiitkgp@gmail.com')}}
-><IconA style={styles.SocialIcons} name='mail'/></TouchableOpacity>
-  </View></Body>
-         </Footer>
-         </Container>
-         
-      
-    
-)
+    <Content>
+      <DrawerItems {...props} />
+    </Content>
+
+    <Footer style={{ height: 50, backgroundColor: "#0099ff" }}>
+      <Body>
+        <View
+          style={{
+            flexDirection: "row",
+            width: "100%",
+            justifyContent: "space-around"
+          }}
+        >
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL(
+                "https://www.linkedin.com/company/technology-students-gymkhana-iit-kharagpur/about/"
+              );
+            }}
+          >
+            <IconA name="linkedin-square" style={styles.SocialIcons} />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL("https://www.facebook.com/TSG.IITKharagpur/");
+            }}
+          >
+            <IconA style={styles.SocialIcons} name="facebook-square" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL("mailto:tech.tsgiitkgp@gmail.com");
+            }}
+          >
+            <IconA style={styles.SocialIcons} name="mail" />
+          </TouchableOpacity>
+        </View>
+      </Body>
+    </Footer>
+  </Container>
+);
 
 const Navigator = createDrawerNavigator(
   {
     //DrawerNavigation: DrawerNavigation,
     MainPage: {
-      screen:MainPage,
-       navigationOptions: {
-        drawerLabel: 'Gymkhana Website',
-        drawerIcon: ({ tintColor }) =>  <Icon name="home"  size={25} color={tintColor} />
+      screen: MainPage,
+      navigationOptions: {
+        drawerLabel: "Gymkhana Website",
+        drawerIcon: ({ tintColor }) => (
+          <Icon name="home" size={22} color={tintColor} />
+        )
       }
-          },
-     Blog: {
-      screen:Blog,
-      navigationOptions:{
-        drawerLabel: 'Gymkhana Blog',
-        drawerIcon: ({ tintColor })=> <IonIcon name="ios-paper" size={25} color={tintColor} />
+    },
+    Blog: {
+      screen: Blog,
+      navigationOptions: {
+        drawerLabel: "Gymkhana Blog",
+        drawerIcon: ({ tintColor }) => (
+          <IonIcon name="ios-paper" size={22} color={tintColor} />
+        )
       }
     },
     MetaKgp: {
-      screen:MetaKgp,
-      navigationOptions:{
-        drawerLabel: 'MetaKgp Wiki',
-        drawerIcon: ({ tintColor })=> <IconFA name="wikipedia-w" size={25} color={tintColor} />
+      screen: MetaKgp,
+      navigationOptions: {
+        drawerLabel: "MetaKgp Wiki",
+        drawerIcon: ({ tintColor }) => (
+          <IconFA name="wikipedia-w" size={20} color={tintColor} />
+        )
       }
     },
     ChillZone: {
-      screen:ChillZone,
-      navigationOptions:{
-        drawerLabel: 'ChillZone',
-        drawerIcon: ({ tintColor })=> <AntdesignIcon name="smileo" size={25} color={tintColor} />
+      screen: ChillZone,
+      navigationOptions: {
+        drawerLabel: "ChillZone",
+        drawerIcon: ({ tintColor }) => (
+          <AntdesignIcon name="smileo" size={22} color={tintColor} />
+        )
       }
     },
     MFQP: {
-      screen:MFQP,
-      navigationOptions:{
-        drawerIcon: ({ tintColor })=> <Icon name="book-open" size={25} color={tintColor} />
+      screen: MFQP,
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <Icon name="book-open" size={22} color={tintColor} />
+        )
       }
     },
     ReachUs: {
-      screen:ReachUs,
-      navigationOptions:{
-        drawerLabel: 'Reach Us',
-        drawerIcon: ({ tintColor })=> <Entypo name="new-message" size={25} color={tintColor} />
+      screen: ReachUs,
+      navigationOptions: {
+        drawerLabel: "Reach Us",
+        drawerIcon: ({ tintColor }) => (
+          <Entypo name="new-message" size={22} color={tintColor} />
+        )
       }
     },
-   AboutUs:{
-    screen:AboutUs,
-    navigationOptions:{
-      drawerIcon: ({ tintColor })=>  <AntdesignIcon
-                name="infocirlceo" size={25} color={tintColor} />
+    AboutUs: {
+      screen: AboutUs,
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <AntdesignIcon name="infocirlceo" size={22} color={tintColor} />
+        )
+      }
+    },
+    More: {
+      screen: More,
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <Icon name="more-horizontal" size={22} color={tintColor} />
+        )
+      }
     }
-   },
-   More:{
-    screen:More,
-    navigationOptions:{
-      drawerIcon: ({ tintColor })=> <Icon name="more-horizontal" size={25} color={tintColor} />
-    }
-   },
   },
   {
     initialRouteName: "MainPage",
     contentComponent: CustomDrawerContentComponent,
-    drawerOpenRoute:'DrawerOpen',
-    drawerCloseRoute:'DrawerClose',
-    drawerToggleRoute:'drawerToggle',
+    drawerOpenRoute: "DrawerOpen",
+    drawerCloseRoute: "DrawerClose",
+    drawerToggleRoute: "drawerToggle",
     contentOptions: {
-      activeTintColor: "#fff",
-      inactiveTintColor: "#575757",
+      activeTintColor: "#000",
+      inactiveTintColor: "#000",
 
-      activeBackgroundColor: "#0000a0",
-      
+      activeBackgroundColor: "#eee"
     }
   }
 );
@@ -383,11 +426,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: height(40)
   },
-   SocialIcons:{
-  fontSize:30,
-  marginLeft:10,
-  marginRight:10,
-  color:'#fff',
-
- },
+  SocialIcons: {
+    fontSize: 30,
+    marginLeft: 10,
+    marginRight: 10,
+    color: "#fff"
+  }
 });

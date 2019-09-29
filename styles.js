@@ -6,7 +6,7 @@ export default StyleSheet.create({
 		fontFamily:'Roboto-Regular',
 		// borderBottomLeftRadius: 20,
 		// borderBottomRightRadius: 20,
-		backgroundColor: "#0000A0",
+		backgroundColor: "#0099ff",
 		flexDirection: "row",
 		elevation: 5
 	},

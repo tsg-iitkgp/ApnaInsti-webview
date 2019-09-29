@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/ApnaInsti.iml" filepath="$PROJECT_DIR$/ApnaInsti.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-onesignal/android/react-native-onesignal.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-onesignal/android/react-native-onesignal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-onesignal/android/react-native-onesignal.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-onesignal/android/react-native-onesignal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" />
     </modules>
   </component>
