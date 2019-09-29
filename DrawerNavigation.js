@@ -287,7 +287,9 @@ class ReachUs extends Component<Props> {
 }
 const CustomDrawerContentComponent = props => (
   <Container>
-
+    <View style={styles.image}>
+      <Image source={{uri:'https://i.imgur.com/dTxxrd9.png'}} style={styles.img}/>
+    </View>
     <Content>
       <DrawerItems {...props} />
     </Content>
@@ -431,5 +433,14 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     color: "#fff"
+  },
+  image:{
+    height:height(20),
+    width:'100%',
+
+  },
+  img:{
+    width:'100%',
+    height:height(20),
   }
 });
