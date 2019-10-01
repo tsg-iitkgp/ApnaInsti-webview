@@ -66,14 +66,13 @@ class Blog extends Component<Props> {
           <View style={{ justifyContent: "center" }}>
             <Text
               style={{
-                marginLeft: "10%",
-                alignItems: "center",
+               marginRight:width(1),
                 color: "#fff",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
             >
-              ApnaInsti
+              Gymkhana Blog
             </Text>
           </View>
         </View>
@@ -115,14 +114,13 @@ class MetaKgp extends Component<Props> {
           <View style={{ justifyContent: "center" }}>
             <Text
               style={{
-                marginLeft: "10%",
-                alignItems: "center",
+               marginRight:width(1),
                 color: "#fff",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
             >
-              ApnaInsti
+              MetaKGP
             </Text>
           </View>
         </View>
@@ -164,14 +162,13 @@ class ChillZone extends Component<Props> {
           <View style={{ justifyContent: "center" }}>
             <Text
               style={{
-                marginLeft: "10%",
-                alignItems: "center",
+               marginRight:width(1),
                 color: "#fff",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
             >
-              ApnaInsti
+              ChillZone
             </Text>
           </View>
         </View>
@@ -213,14 +210,13 @@ class MFQP extends Component<Props> {
           <View style={{ justifyContent: "center" }}>
             <Text
               style={{
-                marginLeft: "10%",
-                alignItems: "center",
+               marginRight:width(1),
                 color: "#fff",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
             >
-              ApnaInsti
+              MFQP
             </Text>
           </View>
         </View>
@@ -262,14 +258,13 @@ class ReachUs extends Component<Props> {
           <View style={{ justifyContent: "center" }}>
             <Text
               style={{
-                marginLeft: "10%",
-                alignItems: "center",
+               marginRight:width(1),
                 color: "#fff",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
             >
-              ApnaInsti
+              Reach Us
             </Text>
           </View>
         </View>
@@ -288,10 +283,11 @@ class ReachUs extends Component<Props> {
 const CustomDrawerContentComponent = props => (
   <Container>
     <View style={styles.image}>
-      <Image source={{uri:'https://i.imgur.com/dTxxrd9.png'}} style={styles.img}/>
+      <Image source={require('./img.png')} style={styles.img}/>
     </View>
     <Content>
       <DrawerItems {...props} />
+      
     </Content>
 
     <Footer style={{ height: 50, backgroundColor: "#0099ff" }}>
@@ -379,6 +375,14 @@ const Navigator = createDrawerNavigator(
         )
       }
     },
+    More: {
+      screen: More,
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <Icon name="more-horizontal" size={22} color={tintColor} />
+        )
+      }
+    },
     ReachUs: {
       screen: ReachUs,
       navigationOptions: {
@@ -391,19 +395,13 @@ const Navigator = createDrawerNavigator(
     AboutUs: {
       screen: AboutUs,
       navigationOptions: {
+        drawerLabel: "About Us",
         drawerIcon: ({ tintColor }) => (
           <AntdesignIcon name="infocirlceo" size={22} color={tintColor} />
         )
       }
     },
-    More: {
-      screen: More,
-      navigationOptions: {
-        drawerIcon: ({ tintColor }) => (
-          <Icon name="more-horizontal" size={22} color={tintColor} />
-        )
-      }
-    }
+    
   },
   {
     initialRouteName: "MainPage",
@@ -419,6 +417,7 @@ const Navigator = createDrawerNavigator(
     }
   }
 );
+
 const Drawers = createAppContainer(Navigator);
 const styles = StyleSheet.create({
   container: {
@@ -435,12 +434,14 @@ const styles = StyleSheet.create({
     color: "#fff"
   },
   image:{
-    height:height(20),
+    height:130,
+    justifyContent:'center',
     width:'100%',
-
+    alignItems:'center'
   },
   img:{
     width:'100%',
-    height:height(20),
+    flex:1,
+
   }
 });

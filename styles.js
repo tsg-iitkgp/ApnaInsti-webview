@@ -8,7 +8,9 @@ export default StyleSheet.create({
 		// borderBottomRightRadius: 20,
 		backgroundColor: "#0099ff",
 		flexDirection: "row",
-		elevation: 5
+		elevation: 5,
+		justifyContent:'space-between',
+		
 	},
 	  blocks: {
 		width: width(80),

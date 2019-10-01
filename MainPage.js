@@ -58,7 +58,7 @@ export default class MainPage extends Component<Props> {
                 fontFamily:'Roboto-Regular',
               }}
             >
-              ApnaInsti
+              Gymkhana Website
               
             </Text>
           </View>

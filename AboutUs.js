@@ -30,42 +30,39 @@ export default class AboutUs extends Component<Props> {
           >
             <Icon name="menu" size={25} color="#fff" />
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
+          <View style={{ justifyContent: "center" , alignItems:'center',}}>
             <Text
               style={{
-                marginLeft: "10%",
-                alignItems: "center",
+               
+                marginRight:width(1),
                 color: "#fff",
                 fontSize: 22,
                 fontFamily:'Roboto-Regular',
               }}
             >
-              ApnaInsti
+              About Us
             </Text>
           </View>
         </View>
         <View style={styles.about}>
+        <View style={styles.logoImg}>
+          <Image source={require('./logo.png')} style={styles.logo} />
+        </View>
           <View style={styles.madeby}>
             <Text style={styles.heading}>
-              Made by Tech Team 
+              Made with <IconA name="heart" size={20} color="#ff0000"/>{'\n'} by 
+               Tech Team 
             </Text>
             <Text style={styles.name}>
               Techonology Students Gymkhana
             </Text>
           </View>
-          <View style={styles.vamsi}>
-            <Text style={styles.heading}>APP CREDITS:</Text>
-            <Text style={styles.name}>D.Venkata Vamsi</Text>
-            
-          </View>
-          <View style={styles.shivamJha}>
-            <Text style={styles.heading}>Special Thanks To</Text>
-            <Text style={styles.name}>Shivam Kumar Jha</Text>
-            <Text style={styles.name}>tech.tsgiitkgp@gmail.com</Text>
-          </View>
+    <Text style={styles.name1}>
+             More Features Coming Soon
+            </Text>
         </View>
         <View style={styles.foot}>
-          <Text><IconA name='copyright'/> copyright Gymkhana-2019</Text>
+          <Text><IconA name='copyright'/> 2019 TSG IIT KHARAGPUR</Text>
         </View>
       </View>
     );
@@ -75,13 +72,18 @@ export default class AboutUs extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent:'space-between'
+    justifyContent:'space-between',
+
   },
  about:{
   alignItems:'center',
- 
+  borderColor:'#0099ff',
+  borderWidth:2,
+  borderRadius:10,
+  width:'80%',
   textAlign:'center',
   fontFamily:'Roboto-Regular',
+  marginLeft:'10%'
 
 
  },
@@ -92,34 +94,25 @@ heading:{
   fontFamily:'Roboto-Regular',
 },
 name:{
-  fontSize:20,
+  fontSize:15,
   textAlign:'center',
   fontFamily:'Roboto-Regular',
 },
-vamsi:{
-  marginTop:height(3),
-  borderWidth:2,
-  borderColor:'#0099ff',
-  borderRadius:5,
-  width:width(80),
-  height:height(10),
-
+name1:{
+  fontSize:15,
+  textAlign:'center',
+  fontFamily:'Roboto-Regular',
+  marginTop:50,
 },
-shivamJha:{
-  marginTop:height(3),
-  borderWidth:2,
-  borderColor:'#0099ff',
-  borderRadius:5,
-  width:width(80),
-  height:height(15),
+logoImg:{
+  width:'100%',
+  height:height(30),
+  justifyContent:'center',
+  alignItems:'center',
 },
-madeby:{
-  borderWidth:2,
-  borderColor:'#0099ff',
-  borderRadius:5,
-  width:width(80),
-  height:height(15),
-
+logo:{
+  width:100,
+  height:120,
 },
 foot:{
   justifyContent:'flex-end',
