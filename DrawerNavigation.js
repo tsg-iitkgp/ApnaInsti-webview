@@ -8,9 +8,10 @@ import {
   TouchableOpacity,
   Linking,
   Image,
-  WebView,
+  
   ActivityIndicator
 } from "react-native";
+import { WebView } from 'react-native-webview';
 import AntdesignIcon from "react-native-vector-icons/AntDesign";
 import MIcon from "react-native-vector-icons/MaterialCommunityIcons";
 import IonIcon from "react-native-vector-icons/Ionicons";
@@ -18,6 +19,7 @@ import Entypo from "react-native-vector-icons/Entypo";
 import IconA from "react-native-vector-icons/AntDesign";
 import Icon from "react-native-vector-icons/Feather";
 import IconFA from "react-native-vector-icons/FontAwesome";
+import IconFA5 from "react-native-vector-icons/FontAwesome5";
 import { EventRegister } from "react-native-event-listeners";
 import { width, height, totalSize } from "react-native-dimension";
 import gstyles from "./styles.js";
@@ -78,6 +80,102 @@ class Blog extends Component<Props> {
         </View>
         <WebView
           source={{ uri: "http://www.gymkhana.iitkgp.ac.in/blog/" }}
+          domStorageEnabled={true}
+          startInLoadingState={true}
+          renderLoading={this.ActivityIndicatorLoadingView}
+        />
+      </View>
+    );
+  }
+}
+class Kgpamica extends Component<Props> {
+  static navigationOptions = { header: null };
+  ActivityIndicatorLoadingView() {
+    return (
+      <View style={styles.actindi}>
+        <ActivityIndicator
+          color="#009688"
+          size="large"
+          style={styles.ActivityIndicatorStyle}
+        />
+      </View>
+    );
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={gstyles.topbar}>
+          <TouchableOpacity
+            style={{ justifyContent: "center", marginLeft: 5 }}
+            onPress={() => {
+              EventRegister.emit("toggle", null);
+            }}
+          >
+            <Icon name="menu" size={25} color="#fff" />
+          </TouchableOpacity>
+          <View style={{ justifyContent: "center" }}>
+            <Text
+              style={{
+               marginRight:width(1),
+                color: "#fff",
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
+              }}
+            >
+              KGPAMICA
+            </Text>
+          </View>
+        </View>
+        <WebView
+          source={{ uri: "https://www.kgpamica.com" }}
+          domStorageEnabled={true}
+          startInLoadingState={true}
+          renderLoading={this.ActivityIndicatorLoadingView}
+        />
+      </View>
+    );
+  }
+}
+class KYB extends Component<Props> {
+  static navigationOptions = { header: null };
+  ActivityIndicatorLoadingView() {
+    return (
+      <View style={styles.actindi}>
+        <ActivityIndicator
+          color="#009688"
+          size="large"
+          style={styles.ActivityIndicatorStyle}
+        />
+      </View>
+    );
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={gstyles.topbar}>
+          <TouchableOpacity
+            style={{ justifyContent: "center", marginLeft: 5 }}
+            onPress={() => {
+              EventRegister.emit("toggle", null);
+            }}
+          >
+            <Icon name="menu" size={25} color="#fff" />
+          </TouchableOpacity>
+          <View style={{ justifyContent: "center" }}>
+            <Text
+              style={{
+               marginRight:width(1),
+                color: "#fff",
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
+              }}
+            >
+              KGP Yellow Pages
+            </Text>
+          </View>
+        </View>
+        <WebView
+          source={{ uri: "https://wiki.metakgp.org/w/Yellow_pages" }}
           domStorageEnabled={true}
           startInLoadingState={true}
           renderLoading={this.ActivityIndicatorLoadingView}
@@ -358,6 +456,15 @@ const Navigator = createDrawerNavigator(
         )
       }
     },
+     Kgpamica: {
+      screen: Kgpamica,
+      navigationOptions: {
+        drawerLabel: "KGPAMICA",
+        drawerIcon: ({ tintColor }) => (
+          <IconFA5 name="book-reader" size={20} color={tintColor} />
+        )
+      }
+    },
     ChillZone: {
       screen: ChillZone,
       navigationOptions: {
@@ -372,6 +479,15 @@ const Navigator = createDrawerNavigator(
       navigationOptions: {
         drawerIcon: ({ tintColor }) => (
           <Icon name="book-open" size={22} color={tintColor} />
+        )
+      }
+    },
+     KYB: {
+      screen: KYB,
+      navigationOptions: {
+        drawerLabel: "KGP Yellow Pages",
+        drawerIcon: ({ tintColor }) => (
+          <MIcon name="phone-classic" size={22} color={tintColor} />
         )
       }
     },

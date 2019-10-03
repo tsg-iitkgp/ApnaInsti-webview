@@ -7,8 +7,9 @@ import {  Platform,
   TouchableOpacity,
   Linking,
   Image,
-  WebView,
+ 
   ActivityIndicator} from 'react-native';
+  import { WebView } from 'react-native-webview';
 import IconA from "react-native-vector-icons/AntDesign";
 import MIcon from "react-native-vector-icons/MaterialCommunityIcons";
 import Icon from "react-native-vector-icons/Feather";

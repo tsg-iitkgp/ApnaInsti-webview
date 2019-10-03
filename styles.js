@@ -43,7 +43,7 @@ export default StyleSheet.create({
 		borderWidth:2,
 		marginLeft: width(6.5),
 		marginTop: height(2),
-		elevation: 2,
+		elevation:0.5,
 		borderRadius: 5,
 		justifyContent: "center",
 		alignItems: "center"
