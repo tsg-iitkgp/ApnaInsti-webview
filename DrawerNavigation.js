@@ -8,15 +8,17 @@ import {
   TouchableOpacity,
   Linking,
   Image,
-  
-  ActivityIndicator
+  ActivityIndicator,
+  BackHandler
 } from "react-native";
-import { WebView } from 'react-native-webview';
+import { WebView } from "react-native-webview";
 import AntdesignIcon from "react-native-vector-icons/AntDesign";
 import MIcon from "react-native-vector-icons/MaterialCommunityIcons";
 import IonIcon from "react-native-vector-icons/Ionicons";
 import Entypo from "react-native-vector-icons/Entypo";
 import IconA from "react-native-vector-icons/AntDesign";
+import EvilIcons from "react-native-vector-icons/EvilIcons"
+
 import Icon from "react-native-vector-icons/Feather";
 import IconFA from "react-native-vector-icons/FontAwesome";
 import IconFA5 from "react-native-vector-icons/FontAwesome5";
@@ -32,8 +34,12 @@ import {
   DrawerItems,
   SafeAreaView
 } from "react-navigation";
+
 import { createDrawerNavigator } from "react-navigation-drawer";
 export default class DrawerNavigation extends Component<Props> {
+  reload() {
+    this.myWebView.reload();
+  }
   static navigationOptions = { header: null };
   render() {
     return <Drawers />;
@@ -41,6 +47,33 @@ export default class DrawerNavigation extends Component<Props> {
 }
 
 class Blog extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+       canGoBack: false
+    };
+  }
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+}
+componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
+}
+ handleBackPress = () => {
+   if (this.state.canGoBack) {
+      this.GymkhanaBlog.goBack();
+    }
+  else{
+    this.props.navigation.goBack(null)
+    }
+  return true;
+} 
+onNavigationStateChange(navState) {
+      this.setState({
+      canGoBack: navState.canGoBack
+   });
+ }
   static navigationOptions = { header: null };
   ActivityIndicatorLoadingView() {
     return (
@@ -65,11 +98,17 @@ class Blog extends Component<Props> {
           >
             <Icon name="menu" size={25} color="#fff" />
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
             <Text
               style={{
-               marginRight:width(1),
-                color: "#fff",
+                marginRight: width(1),
+                   color: "#ebebeb",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
@@ -77,19 +116,34 @@ class Blog extends Component<Props> {
               Gymkhana Blog
             </Text>
           </View>
+       
+
+        
+             <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{this.GymkhanaBlog.reload()}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
+          </TouchableOpacity>
         </View>
+
         <WebView
-          source={{ uri: "http://www.gymkhana.iitkgp.ac.in/blog/" }}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          renderLoading={this.ActivityIndicatorLoadingView}
-        />
+              source={{ uri: "http://www.gymkhana.iitkgp.ac.in/blog/" }}
+              domStorageEnabled={true}
+              startInLoadingState={true}
+              renderLoading={this.ActivityIndicatorLoadingView}
+              ref={ref => (this.GymkhanaBlog = ref)}
+              onNavigationStateChange={this.onNavigationStateChange.bind(this)} 
+            />
+       
       </View>
     );
   }
 }
 class Kgpamica extends Component<Props> {
-  static navigationOptions = { header: null };
+  componentDidMount() {
+   Linking.openURL(
+                "https://play.google.com/store/apps/details?id=com.kgpamica"
+              );
+}
+static navigationOptions = { header: null };
   ActivityIndicatorLoadingView() {
     return (
       <View style={styles.actindi}>
@@ -113,11 +167,17 @@ class Kgpamica extends Component<Props> {
           >
             <Icon name="menu" size={25} color="#fff" />
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
             <Text
               style={{
-               marginRight:width(1),
-                color: "#fff",
+                marginRight: width(1),
+                   color: "#ebebeb",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
@@ -125,18 +185,51 @@ class Kgpamica extends Component<Props> {
               KGPAMICA
             </Text>
           </View>
+
+        
+             <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{ Linking.openURL(
+                "https://play.google.com/store/apps/details?id=com.kgpamica"
+              );}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
+          </TouchableOpacity>
         </View>
-        <WebView
-          source={{ uri: "https://www.kgpamica.com" }}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          renderLoading={this.ActivityIndicatorLoadingView}
-        />
-      </View>
-    );
-  }
+<View>
+  <Text>
+    KGPAMICA website is down . Please Download Kgpamica website   ... Refresh the page if you are not directed to Play Store
+  </Text>
+
+</View>
+
+        </View>)}
 }
 class KYB extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+       canGoBack: false
+    };
+  }
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+}
+componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
+}
+ handleBackPress = () => {
+   if (this.state.canGoBack) {
+      this.KYB.goBack();
+    }
+  else{
+    this.props.navigation.goBack(null)
+    }
+  return true;
+} 
+onNavigationStateChange(navState) {
+      this.setState({
+      canGoBack: navState.canGoBack
+   });
+ }
   static navigationOptions = { header: null };
   ActivityIndicatorLoadingView() {
     return (
@@ -161,11 +254,17 @@ class KYB extends Component<Props> {
           >
             <Icon name="menu" size={25} color="#fff" />
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
             <Text
               style={{
-               marginRight:width(1),
-                color: "#fff",
+                marginRight: width(1),
+                   color: "#ebebeb",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
@@ -173,18 +272,54 @@ class KYB extends Component<Props> {
               KGP Yellow Pages
             </Text>
           </View>
+   
+       
+             <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{this.KYB.reload()}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
+          </TouchableOpacity>
         </View>
+
         <WebView
-          source={{ uri: "https://wiki.metakgp.org/w/Yellow_pages" }}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          renderLoading={this.ActivityIndicatorLoadingView}
-        />
+              source={{ uri: "https://wiki.metakgp.org/w/Yellow_pages" }}
+              domStorageEnabled={true}
+              startInLoadingState={true}
+              renderLoading={this.ActivityIndicatorLoadingView}
+              ref={ref => (this.KYB = ref)}
+              onNavigationStateChange={this.onNavigationStateChange.bind(this)} 
+            />
+        
       </View>
     );
   }
 }
 class MetaKgp extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+       canGoBack: false
+    };
+  }
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+}
+componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
+}
+ handleBackPress = () => {
+   if (this.state.canGoBack) {
+      this.metakgp.goBack();
+    }
+  else{
+    this.props.navigation.goBack(null)
+    }
+  return true;
+} 
+onNavigationStateChange(navState) {
+      this.setState({
+      canGoBack: navState.canGoBack
+   });
+ }
   static navigationOptions = { header: null };
   ActivityIndicatorLoadingView() {
     return (
@@ -209,11 +344,17 @@ class MetaKgp extends Component<Props> {
           >
             <Icon name="menu" size={25} color="#fff" />
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
             <Text
               style={{
-               marginRight:width(1),
-                color: "#fff",
+                marginRight: width(1),
+                   color: "#ebebeb",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
@@ -221,114 +362,55 @@ class MetaKgp extends Component<Props> {
               MetaKGP
             </Text>
           </View>
-        </View>
-        <WebView
-          source={{ uri: "https://wiki.metakgp.org/" }}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          renderLoading={this.ActivityIndicatorLoadingView}
-        />
-      </View>
-    );
-  }
-}
-class ChillZone extends Component<Props> {
-  static navigationOptions = { header: null };
-  ActivityIndicatorLoadingView() {
-    return (
-      <View style={styles.actindi}>
-        <ActivityIndicator
-          color="#009688"
-          size="large"
-          style={styles.ActivityIndicatorStyle}
-        />
-      </View>
-    );
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={gstyles.topbar}>
-          <TouchableOpacity
-            style={{ justifyContent: "center", marginLeft: 5 }}
-            onPress={() => {
-              EventRegister.emit("toggle", null);
-            }}
-          >
-            <Icon name="menu" size={25} color="#fff" />
+       
+       
+             <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{this.metakgp.reload()}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
-            <Text
-              style={{
-               marginRight:width(1),
-                color: "#fff",
-                fontSize: 22,
-                fontFamily: "Roboto-Regular"
-              }}
-            >
-              ChillZone
-            </Text>
-          </View>
         </View>
+
         <WebView
-          source={{ uri: "http://chill.metakgp.org/" }}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          renderLoading={this.ActivityIndicatorLoadingView}
-        />
+              source={{ uri: "https://wiki.metakgp.org/" }}
+              domStorageEnabled={true}
+              startInLoadingState={true}
+              renderLoading={this.ActivityIndicatorLoadingView}
+              ref={ref => (this.metakgp = ref)}
+              onNavigationStateChange={this.onNavigationStateChange.bind(this)} 
+            />
+          
       </View>
     );
   }
 }
-class MFQP extends Component<Props> {
-  static navigationOptions = { header: null };
-  ActivityIndicatorLoadingView() {
-    return (
-      <View style={styles.actindi}>
-        <ActivityIndicator
-          color="#009688"
-          size="large"
-          style={styles.ActivityIndicatorStyle}
-        />
-      </View>
-    );
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={gstyles.topbar}>
-          <TouchableOpacity
-            style={{ justifyContent: "center", marginLeft: 5 }}
-            onPress={() => {
-              EventRegister.emit("toggle", null);
-            }}
-          >
-            <Icon name="menu" size={25} color="#fff" />
-          </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
-            <Text
-              style={{
-               marginRight:width(1),
-                color: "#fff",
-                fontSize: 22,
-                fontFamily: "Roboto-Regular"
-              }}
-            >
-              MFQP
-            </Text>
-          </View>
-        </View>
-        <WebView
-          source={{ uri: "https://qp.metakgp.org/" }}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          renderLoading={this.ActivityIndicatorLoadingView}
-        />
-      </View>
-    );
-  }
-}
+
 class ReachUs extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+       canGoBack: false
+    };
+  }
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+}
+componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
+}
+ handleBackPress = () => {
+   if (this.state.canGoBack) {
+      this.ReachUs.goBack();
+    }
+  else{
+    this.props.navigation.goBack(null)
+    }
+  return true;
+} 
+onNavigationStateChange(navState) {
+      this.setState({
+      canGoBack: navState.canGoBack
+   });
+ }
   static navigationOptions = { header: null };
   ActivityIndicatorLoadingView() {
     return (
@@ -353,11 +435,17 @@ class ReachUs extends Component<Props> {
           >
             <Icon name="menu" size={25} color="#fff" />
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
             <Text
               style={{
-               marginRight:width(1),
-                color: "#fff",
+                marginRight: width(1),
+                   color: "#ebebeb",
                 fontSize: 22,
                 fontFamily: "Roboto-Regular"
               }}
@@ -365,15 +453,25 @@ class ReachUs extends Component<Props> {
               Reach Us
             </Text>
           </View>
+      
+        
+             <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{this.ReachUs.reload()}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
+          </TouchableOpacity>
         </View>
+
         <WebView
-          source={{
-            uri: "http://www.gymkhana.iitkgp.ac.in/blog/index.php/complaint/"
-          }}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          renderLoading={this.ActivityIndicatorLoadingView}
-        />
+              source={{
+                uri:
+                  "http://www.gymkhana.iitkgp.ac.in/blog/index.php/complaint/"
+              }}
+              domStorageEnabled={true}
+              startInLoadingState={true}
+              renderLoading={this.ActivityIndicatorLoadingView}
+              ref={ref => (this.ReachUs = ref)}
+              onNavigationStateChange={this.onNavigationStateChange.bind(this)} 
+            />
+          
       </View>
     );
   }
@@ -381,11 +479,10 @@ class ReachUs extends Component<Props> {
 const CustomDrawerContentComponent = props => (
   <Container>
     <View style={styles.image}>
-      <Image source={require('./img.png')} style={styles.img}/>
+      <Image source={require("./img.png")} style={styles.img} />
     </View>
     <Content>
       <DrawerItems {...props} />
-      
     </Content>
 
     <Footer style={{ height: 50, backgroundColor: "#0099ff" }}>
@@ -456,7 +553,7 @@ const Navigator = createDrawerNavigator(
         )
       }
     },
-     Kgpamica: {
+    Kgpamica: {
       screen: Kgpamica,
       navigationOptions: {
         drawerLabel: "KGPAMICA",
@@ -465,24 +562,8 @@ const Navigator = createDrawerNavigator(
         )
       }
     },
-    ChillZone: {
-      screen: ChillZone,
-      navigationOptions: {
-        drawerLabel: "ChillZone",
-        drawerIcon: ({ tintColor }) => (
-          <AntdesignIcon name="smileo" size={22} color={tintColor} />
-        )
-      }
-    },
-    MFQP: {
-      screen: MFQP,
-      navigationOptions: {
-        drawerIcon: ({ tintColor }) => (
-          <Icon name="book-open" size={22} color={tintColor} />
-        )
-      }
-    },
-     KYB: {
+
+    KYB: {
       screen: KYB,
       navigationOptions: {
         drawerLabel: "KGP Yellow Pages",
@@ -516,8 +597,7 @@ const Navigator = createDrawerNavigator(
           <AntdesignIcon name="infocirlceo" size={22} color={tintColor} />
         )
       }
-    },
-    
+    }
   },
   {
     initialRouteName: "MainPage",
@@ -549,15 +629,14 @@ const styles = StyleSheet.create({
     marginRight: 10,
     color: "#fff"
   },
-  image:{
-    height:130,
-    justifyContent:'center',
-    width:'100%',
-    alignItems:'center'
+  image: {
+    height: 130,
+    justifyContent: "center",
+    width: "100%",
+    alignItems: "center"
   },
-  img:{
-    width:'100%',
-    flex:1,
-
+  img: {
+    width: "100%",
+    flex: 1
   }
 });

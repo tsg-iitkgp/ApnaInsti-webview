@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import {  Platform,
+import React, { Component } from "react";
+import {
+  Platform,
   StyleSheet,
   Text,
   View,
@@ -7,40 +8,71 @@ import {  Platform,
   TouchableOpacity,
   Linking,
   Image,
- 
-  ActivityIndicator} from 'react-native';
-  import { WebView } from 'react-native-webview';
+  RefreshControl,
+  ActivityIndicator,
+  BackHandler
+} from "react-native";
+import { WebView } from "react-native-webview";
 import IconA from "react-native-vector-icons/AntDesign";
 import MIcon from "react-native-vector-icons/MaterialCommunityIcons";
 import Icon from "react-native-vector-icons/Feather";
 import IconFA from "react-native-vector-icons/FontAwesome";
+import EvilIcons from "react-native-vector-icons/EvilIcons"
 import { EventRegister } from "react-native-event-listeners";
-import gstyles from './styles.js';
+import gstyles from "./styles.js";
 import { width, height, totalSize } from "react-native-dimension";
 
+
 export default class MainPage extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+       canGoBack: false
+    };
+  }
+  reload=()=>{
+    this.Gymkhana.reload();
+  }
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+}
   componentWillMount() {
     this.listener = EventRegister.addEventListener("toggle", data => {
       this.props.navigation.toggleDrawer();
     });
+     BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
   }
+ handleBackPress = () => {
+   if (this.state.canGoBack) {
+      this.Gymkhana.goBack();
+    }
+  else{
+    this.props.navigation.goBack(null)
+    }
+  return true;
+} 
+onNavigationStateChange(navState) {
+      this.setState({
+      canGoBack: navState.canGoBack
+   });
+ }
   static navigationOptions = { header: null };
   ActivityIndicatorLoadingView() {
     return (
       <View style={styles.actindi}>
-      <ActivityIndicator
-        color="#7878ff"
-        size="large"
-        style={styles.ActivityIndicatorStyle}
-      />
+        <ActivityIndicator
+          color="#7878ff"
+          size="large"
+          style={styles.ActivityIndicatorStyle}
+        />
       </View>
     );
   }
   render() {
     return (
       <View style={styles.container}>
-      
-       <View style={gstyles.topbar}>
+        <View style={gstyles.topbar}>
           <TouchableOpacity
             style={{ justifyContent: "center", marginLeft: 5 }}
             onPress={() => {
@@ -49,42 +81,49 @@ export default class MainPage extends Component<Props> {
           >
             <Icon name="menu" size={25} color="#fff" />
           </TouchableOpacity>
-          <View style={{ justifyContent: "center" }}>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
             <Text
               style={{
-                marginLeft: "10%",
+                textAlign: "center",
                 alignItems: "center",
-                color: "#fff",
+                color: "#ebebeb",
                 fontSize: 22,
-                fontFamily:'Roboto-Regular',
+                fontFamily: "Roboto-Regular"
               }}
             >
               Gymkhana Website
-              
             </Text>
           </View>
+          <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{this.Gymkhana.reload()}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
+          </TouchableOpacity>
         </View>
-       <WebView 
-       source={{uri:'http://www.gymkhana.iitkgp.ac.in/index.php'}}
-       domStorageEnabled={true}
+
+        <WebView
+          source={{ uri: "http://www.gymkhana.iitkgp.ac.in/index.php" }}
+          onNavigationStateChange={this.onNavigationStateChange.bind(this)} 
+          domStorageEnabled={true}
           startInLoadingState={true}
           renderLoading={this.ActivityIndicatorLoadingView}
-       />
-  
-
+          ref={(ref) => this.Gymkhana = ref}
+        />
       </View>
     );
   }
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent:'center',
+    justifyContent: "center"
   },
- actindi:{
-  flex:1,
-  marginTop:height(40),
- }
+  actindi: {
+    flex: 1
+  }
 });
