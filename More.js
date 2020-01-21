@@ -128,6 +128,25 @@ class More1 extends Component<Props> {
             <Text style={gstyles.boxText}>SARATHI</Text>
             <Text style={gstyles.boxText2}>Travelling is easier together</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={gstyles.box}
+            onPress={() => {
+              this.props.navigation.navigate("WhatSlot");
+            }}
+          >
+            <Text style={gstyles.boxText}>What Slot</Text>
+            <Text style={gstyles.boxText2}>check the slots occupied by courses</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={gstyles.box}
+            onPress={() => {
+              this.props.navigation.navigate("GYFT");
+            }}
+          >
+            <Text style={gstyles.boxText}>GYFT</Text>
+            <Text style={gstyles.boxText2}>Get your freaking timetable
+</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -668,6 +687,184 @@ onNavigationStateChange(navState) {
     );
   }
 }
+class WhatSlot extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+       canGoBack: false
+    };
+  }
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+}
+componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
+}
+ handleBackPress = () => {
+   if (this.state.canGoBack) {
+      this.WhatSlot.goBack();
+    }
+  else{
+    this.props.navigation.goBack(null)
+    }
+  return true;
+} 
+onNavigationStateChange(navState) {
+      this.setState({
+      canGoBack: navState.canGoBack
+   });
+ }
+  static navigationOptions = { header: null };
+  ActivityIndicatorLoadingView() {
+    return (
+      <View style={styles.actindi}>
+        <ActivityIndicator
+          color="#009688"
+          size="large"
+          style={styles.ActivityIndicatorStyle}
+        />
+      </View>
+    );
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={gstyles.topbar}>
+          <TouchableOpacity
+            style={{ justifyContent: "center", marginLeft: 5 }}
+            onPress={() => {
+              EventRegister.emit("toggle", null);
+            }}
+          >
+            <Icon name="menu" size={25} color="#fff" />
+          </TouchableOpacity>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
+            <Text
+              style={{
+                marginRight: width(1),
+                   color: "#ebebeb",
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
+              }}
+            >
+              WhatSlot
+            </Text>
+          </View>
+      
+             <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{this.ChillZone.reload()}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
+          </TouchableOpacity>
+        </View>
+
+        <WebView
+              source={{ uri: "https://whatslot.metakgp.org" }}
+              domStorageEnabled={true}
+              startInLoadingState={true}
+              renderLoading={this.ActivityIndicatorLoadingView}
+              ref={ref => (this.WhatSlot = ref)}
+              onNavigationStateChange={this.onNavigationStateChange.bind(this)} 
+            />
+
+      </View>
+    );
+  }
+}
+class GYFT extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+       canGoBack: false
+    };
+  }
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+}
+componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
+}
+ handleBackPress = () => {
+   if (this.state.canGoBack) {
+      this.GYFT.goBack();
+    }
+  else{
+    this.props.navigation.goBack(null)
+    }
+  return true;
+} 
+onNavigationStateChange(navState) {
+      this.setState({
+      canGoBack: navState.canGoBack
+   });
+ }
+  static navigationOptions = { header: null };
+  ActivityIndicatorLoadingView() {
+    return (
+      <View style={styles.actindi}>
+        <ActivityIndicator
+          color="#009688"
+          size="large"
+          style={styles.ActivityIndicatorStyle}
+        />
+      </View>
+    );
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={gstyles.topbar}>
+          <TouchableOpacity
+            style={{ justifyContent: "center", marginLeft: 5 }}
+            onPress={() => {
+              EventRegister.emit("toggle", null);
+            }}
+          >
+            <Icon name="menu" size={25} color="#fff" />
+          </TouchableOpacity>
+          <View
+            style={{
+              justifyContent: "center",
+              flexDirection: "row",
+              alignItems: "center"
+            }}
+          >
+            <Text
+              style={{
+                marginRight: width(1),
+                   color: "#ebebeb",
+                fontSize: 22,
+                fontFamily: "Roboto-Regular"
+              }}
+            >
+              GYFT
+            </Text>
+          </View>
+      
+             <TouchableOpacity style={{justifyContent:'center', alignItems:'center'}} onPress={()=>{this.ChillZone.reload()}}> 
+            <EvilIcons name="refresh" size ={40} color="#fff"/>
+          </TouchableOpacity>
+        </View>
+
+        <WebView
+              source={{ uri: "https://gyft.metakgp.org" }}
+              domStorageEnabled={true}
+              startInLoadingState={true}
+              renderLoading={this.ActivityIndicatorLoadingView}
+              ref={ref => (this.GYFT = ref)}
+              onNavigationStateChange={this.onNavigationStateChange.bind(this)} 
+            />
+
+      </View>
+    );
+  }
+}
 const RootStack = createStackNavigator(
   {
     Kronos: Kronos,
@@ -677,6 +874,8 @@ const RootStack = createStackNavigator(
     More1: More1,
     ChillZone:ChillZone,
     MFQP: MFQP,
+    WhatSlot:WhatSlot,
+    GYFT:GYFT,
   },
   {
     initialRouteName: "More1"
